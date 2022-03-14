@@ -80,6 +80,8 @@ nav li {
 }
 
 .top-wrapper h1 {
+    padding-top: 80px;
+    padding-bottom: 30px;
     opacity: 0.8;
     font-size: 50px;
     margin-bottom: 10px;
@@ -88,12 +90,14 @@ nav li {
 .top-wrapper h2 {
     opacity: 0.8;
     font-size: 25px;
+    padding-bottom: 10px;
 }
 
 .top-wrapper p {
     opacity: 0.8;
     font-size: 18px;
     margin-bottom: 3px;
+    padding-top: 15px;
     padding-left: 100px;
     padding-right: 100px;
 }
