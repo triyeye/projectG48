@@ -1,9 +1,20 @@
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
+  .jumbotron h1 {
+    font-size: 24px;
+  }
 
+  .jumbotron marquee {
+    width: 500px;
+  }
 }
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
-  
+  .jumbotron marquee {
+    width: 300px;
+  }
+  nav a {
+    visibility: hidden;
+  }  
 }
