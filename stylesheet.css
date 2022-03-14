@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
   }
   
   body {
@@ -12,7 +14,56 @@
   }
 
   /* header */
-
+   header {
+    height: 8vh;
+    width: 100%;
+    background-color: #ffa2afd2;
+    color: white;
+    display: inline;
+    }
+  
+  nav {
+    background-color: #f67b8cd2;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    }
+    
+    nav a {
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+      color: white;
+    }
+    
+    nav a:hover {
+      font-weight: bold;
+    }
+    
+    nav li {
+      display: inline;
+      list-style-type: none;
+      margin-right: 20px;
+    }
+    
+    .jumbotron {
+      font-size: 20px;
+      padding: 60px;
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color: white;
+    }
+    
+    .jumbotron marquee {
+      width: 700px;
+    }
+    
+    .jumbotron h1 {
+      font-size: 150%;
+    }
   /* headline atas */
 
   /* konten */
@@ -20,3 +71,27 @@
   /* tambahan di bawah */
 
   /* footer */
+.footer {
+    background-color: #ffa2afd2;
+    color: rgb(32, 0, 119);
+    margin-top: 30px;
+    height: 180px;
+    padding: 40px;
+    bottom: 0;
+}
+
+  .footer-logo {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-list li {
+  padding: 0 20px 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-list a {
+  color: white;
+}
