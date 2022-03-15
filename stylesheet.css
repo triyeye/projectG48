@@ -1,228 +1,334 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Lucida Grande";
+    margin: 0;
+    font-family: "Lucida Grande";
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .clear {
-  clear: left;
+    clear: left;
 }
 
 header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(212, 58, 96, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 60px;
-  margin: 10px 0px;
+    background-color: #3c40c6;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header-left {
-  float: left;
+    float: left;
+}
+
+.logo {
+    width: 40px;
+    margin: 5px 0 2px 35px;
+}
+
+
+/* Tambahkan CSS untuk menu-icon */
+
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 10px 0;
+    display: none;
 }
 
 .header-right {
-  float: right;
-  margin-right: -25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    flex-wrap: wrap;
 }
 
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: #1D213A;
-  display: flex;
-  justify-content: flex-end;
-  float: left;
-  transition: all 0.5s;
+.navbar {
+    background-size: 201% 100%;
+    background-image: linear-gradient(to left, rgba(87, 95, 207, 1.0) 50%, transparent 50%);
+    transition: background-position 0.3s;
 }
 
-.header-right a:hover {
-  font-weight: bold;
+.navbar:hover {
+    background-position: -99% 0%;
 }
 
- /* Tambahkan CSS untuk menu-icon */
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 10px 0;
-  display: none;
+.navbar a {
+    padding: 10px 15px 10px 15px;
+    display: block;
+    color: #f1f2f6;
 }
 
 .container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
+
+/* content */
+
 .top-wrapper {
-  padding: 150px 0 100px 0;
-  color: white;
-  background-color: #1D213A;
-  background-image: url(img/2235354.jpg);
-  background-size: cover;
-  text-align: center;
-  border-bottom: 5px solid #D43A60;
+    padding: 30px 0 100px 0;
+    color: white;
+    background-color: #1D213A;
+    background-image: url(img/2235354.jpg);
+    background-size: cover;
+    text-align: center;
+    border-bottom: 5px solid #D43A60;
 }
 
 .top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 40px;
-  margin-bottom: 10px;
+    opacity: 0.7;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
+
 .top-wrapper h2 {
-  opacity: 0.8;
-  font-size: 25px;
-  margin-bottom: 5px;
+    opacity: 0.8;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 .top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
+    opacity: 0.7;
+    margin-bottom: 3px;
+    line-height: 1.3em;
+    padding: 10px 40px 20px 40px;
+}
+
+.top-wrapper .top-paragraph {
+    margin: auto auto;
+    background-color: rgba(241, 242, 246, 0.1);
+    width: 800px;
+    border: 2px solid #fff;
+    border-radius: 20px;
 }
 
 .main-wrapper {
-  padding-top: 50px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #1D213A;
-  text-align: center;
-  border-bottom: 5px solid #D43A60;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #fd79a8;
+    text-align: center;
+    border-bottom: 5px solid #D43A60;
+    color: white;
+}
+
+.main-wrapper h1 {
+    margin-bottom: 5px;
+}
+
+.main-wrapper .running-text {
+    display: inline-block;
+    width: 50%;
+    /* border: 5px solid black; */
+}
+
+.headline-wrapper {
+    /* background: rgb(236, 236, 236); */
+    position: relative;
+    /* transition: opacity 1s;
+  transition-timing-function: ease-out; */
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 70px;
+}
+
+.img-main {
+    width: 600px;
+    box-shadow: inset 0px 0px 0px #000;
+    transition: box-shadow 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.img-main:active {
+    box-shadow: inset 0px 0px 20px #000;
+}
+
+.img-bubble {
+    width: 150px;
+}
+
+.haha1,
+.haha2,
+.haha3,
+.haha4 {
+    transition: opacity 1s;
+    transition-timing-function: ease-out;
+    opacity: 0;
+    /* opacity: 100; */
+    position: absolute;
+}
+
+.haha1 {
+    top: 110px;
+    left: 72%;
+}
+
+.haha2 {
+    top: 200px;
+    left: 20%;
+}
+
+.haha3 {
+    top: 270px;
+    left: 70%;
+}
+
+.haha4 {
+    top: 380px;
+    left: 16%;
+}
+
+.headline-wrapper:hover .haha1 {
+    transition-delay: 0s;
+    opacity: 100;
+}
+
+.headline-wrapper:hover .haha2 {
+    transition-delay: 2s;
+    opacity: 100;
+}
+
+.headline-wrapper:hover .haha3 {
+    transition-delay: 4s;
+    opacity: 100;
+}
+
+.headline-wrapper:hover .haha4 {
+    transition-delay: 6s;
+    opacity: 100;
 }
 
 .lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #1D213A;
-  text-align: center;
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #1D213A;
+    text-align: center;
 }
 
 .heading {
-  padding-top: 50px;
-  padding-bottom: 40px;
-  color: white;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    color: white;
 }
 
 .heading h2 {
-  font-weight: normal;
+    font-weight: normal;
 }
 
 .lesson {
-  float: left;
-  width: 33.33%;
-  
+    float: left;
+    width: 33.33%;
 }
 
 .lesson-icon {
-  position: relative;
+    position: relative;
 }
 
 .lesson-icon p {
-  position: relative;
-  top: 0px;
-  width: 100%;
-  color: #D43A60;
-  font-size: 18px;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    color: #D43A60;
+    font-size: 18px;
 }
 
 .txt-contents {
-  width: 80%;
-  display: inline-block;
-  color: white;
-  margin-top: 0px;
-  font-size: 14px;
-  padding: 5px
+    width: 80%;
+    display: inline-block;
+    color: white;
+    margin-top: 0px;
+    font-size: 14px;
+    padding: 5px
 }
 
 .heading h3 {
-  font-weight: normal;
+    font-weight: normal;
 }
 
 .btn {
-  padding: 12px 24px;
-  color: #1D213A;
-  display: inline-block;
-  opacity: 1;
-  border-radius: 4px;
-  text-align: center;
+    padding: 12px 24px;
+    color: #1D213A;
+    display: inline-block;
+    opacity: 1;
+    border-radius: 4px;
+    text-align: center;
 }
 
 .btn:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .message-wrapper {
-  border-top: 5px solid #D43A60;
-  padding-bottom: 0px;
-  text-align: center;
+    border-top: 5px solid #D43A60;
+    padding-bottom: 0px;
+    text-align: center;
 }
 
 .bg-video-wrap {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 300px;
-  background: url(https://cdna.artstation.com/p/assets/images/images/022/521/258/original/bogdan-mb0sco-coffee-shop-animationfullhd.gif?1575731432) no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background: url(https://cdna.artstation.com/p/assets/images/images/022/521/258/original/bogdan-mb0sco-coffee-shop-animationfullhd.gif?1575731432) no-repeat center center/cover;
 }
 
 video {
-  min-width: 100%;
-  min-height: 300px;
-  z-index: 1;
+    min-width: 100%;
+    min-height: 300px;
+    z-index: 1;
 }
 
 .overlay {
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(45deg, rgba(29, 33, 58, .3) 50%, rgba(29, 33, 58, .6) 50%);
-  background-size: 3px 3px;
-  z-index: 2;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, rgba(29, 33, 58, .3) 50%, rgba(29, 33, 58, .6) 50%);
+    background-size: 3px 3px;
+    z-index: 2;
 }
 
 .message {
-  padding: 15px 40px;
-  background-color: #D43A60;
-  cursor: pointer;
-  box-shadow: 0 7px #BF354F;
+    padding: 15px 40px;
+    background-color: #D43A60;
+    cursor: pointer;
+    box-shadow: 0 7px #BF354F;
 }
 
 .message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+    position: relative;
+    top: 7px;
+    box-shadow: none;
 }
 
 footer img {
-  width: 170px;
+    width: 170px;
 }
 
 footer p {
-  color: #1D213A;
-  font-size: 14px;
+    color: #1D213A;
+    font-size: 14px;
 }
 
 footer {
-  border-top: 5px solid #1D213A;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: #D43A60;
+    border-top: 5px solid #1D213A;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #D43A60;
 }
