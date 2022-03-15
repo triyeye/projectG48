@@ -22,13 +22,23 @@ header {
     z-index: 10;
 }
 
+.header-title {
+    float: right;
+    margin: 0;
+    font-size: 24px;
+    padding-top: 8px;
+    padding-left: 10px;
+    color: #f7f7f7;
+}
+
 .header-left {
     float: left;
+    /* border: 5px solid #000; */
 }
 
 .logo {
     width: 40px;
-    margin: 5px 0 2px 35px;
+    margin: 5px 0 10px 35px;
 }
 
 
@@ -62,7 +72,7 @@ header {
 }
 
 .navbar a {
-    padding: 10px 15px 10px 15px;
+    padding: 15px;
     display: block;
     color: #f1f2f6;
 }
@@ -78,13 +88,13 @@ header {
 /* content */
 
 .top-wrapper {
-    padding: 30px 0 100px 0;
+    padding: 30px 0 80px 0;
     color: white;
     background-color: #1D213A;
     background-image: url(img/2235354.jpg);
     background-size: cover;
     text-align: center;
-    border-bottom: 5px solid #D43A60;
+    /* border-bottom: 5px solid #D43A60; */
 }
 
 .top-wrapper h1 {
@@ -119,9 +129,9 @@ header {
     padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #fd79a8;
+    background-image: linear-gradient(to right, #ffF, #fd79a8);
     text-align: center;
-    border-bottom: 5px solid #D43A60;
+    /* border-bottom: 5px solid #D43A60; */
     color: white;
 }
 
@@ -147,13 +157,6 @@ header {
 
 .img-main {
     width: 600px;
-    box-shadow: inset 0px 0px 0px #000;
-    transition: box-shadow 0.2s;
-    transition-timing-function: ease-out;
-}
-
-.img-main:active {
-    box-shadow: inset 0px 0px 20px #000;
 }
 
 .img-bubble {
@@ -215,44 +218,102 @@ header {
     padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #1D213A;
+    background-color: #40407a;
     text-align: center;
 }
 
 .heading {
     padding-top: 50px;
-    padding-bottom: 40px;
     color: white;
 }
 
 .heading h2 {
     font-weight: normal;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.heading p {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.lessons {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .lesson {
     float: left;
-    width: 33.33%;
+    min-width: 300px;
+    width: 30%;
+    background-image: linear-gradient(135deg, #E100FF, #7F00FF);
+    border: 1px solid #300244;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 25px;
+    box-shadow: 7px 7px #300244;
+    transition: all 0.15s;
+    transform: translate(-3px, -3px);
+}
+
+.lesson:hover {
+    box-shadow: 0px 0px #300244;
+    border: 2px solid #300244;
+    transform: translate(0px, 0px);
 }
 
 .lesson-icon {
     position: relative;
 }
 
+.lesson-icon img {
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 3px 5px #300244;
+}
+
 .lesson-icon p {
     position: relative;
-    top: 0px;
+    margin-top: 5px;
     width: 100%;
     color: #D43A60;
     font-size: 18px;
 }
 
 .txt-contents {
-    width: 80%;
+    padding: 0 30px;
     display: inline-block;
     color: white;
     margin-top: 0px;
     font-size: 14px;
-    padding: 5px
+    line-height: 1.5em;
+}
+
+.btn-card-wrap {
+    padding: 10px 5px;
+    margin-bottom: 20px;
+}
+
+.btn-card {
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px 40px;
+    background-color: #fffcdc;
+    border: 1px solid #96270c;
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px #000;
+    transition: all 0.1s;
+    transition-timing-function: ease-out;
+}
+
+.btn-card:active {
+    box-shadow: inset 0px 0px 8px #000;
+    border: none;
 }
 
 .heading h3 {
@@ -261,7 +322,7 @@ header {
 
 .btn {
     padding: 12px 24px;
-    color: #1D213A;
+    color: white;
     display: inline-block;
     opacity: 1;
     border-radius: 4px;
@@ -273,7 +334,7 @@ header {
 }
 
 .message-wrapper {
-    border-top: 5px solid #D43A60;
+    /* border-top: 5px solid #D43A60; */
     padding-bottom: 0px;
     text-align: center;
 }
@@ -305,9 +366,10 @@ video {
 
 .message {
     padding: 15px 40px;
-    background-color: #D43A60;
+    background-color: #7F00FF;
+    border: 1px solid #3f007e;
     cursor: pointer;
-    box-shadow: 0 7px #BF354F;
+    box-shadow: 0 7px #3f007e;
 }
 
 .message:active {
@@ -316,19 +378,21 @@ video {
     box-shadow: none;
 }
 
+footer {
+    color: #e7e7e7;
+    /* border-top: 5px solid #1D213A; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #3c40c6;
+}
+
 footer img {
     width: 170px;
 }
 
 footer p {
-    color: #1D213A;
     font-size: 14px;
-}
-
-footer {
-    border-top: 5px solid #1D213A;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    text-align: center;
-    background-color: #D43A60;
+    margin-top: 0;
+    letter-spacing: 2.8px;
 }
