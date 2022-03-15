@@ -4,7 +4,9 @@
 
 body {
     margin: 0;
-    font-family: "Lucida Grande";
+    /* font-family: "Lucida Grande"; */
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 a {
@@ -59,6 +61,8 @@ header {
     text-align: center;
     z-index: 10;
     flex-wrap: wrap;
+    font-family: 'Montserrat';
+    font-weight: 600;
 }
 
 .navbar {
@@ -107,10 +111,12 @@ header {
     opacity: 0.8;
     font-size: 25px;
     margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
 }
 
 .top-wrapper p {
-    opacity: 0.7;
+    opacity: 0.9;
     margin-bottom: 3px;
     line-height: 1.3em;
     padding: 10px 40px 20px 40px;
@@ -132,16 +138,18 @@ header {
     background-image: linear-gradient(to right, #ffF, #fd79a8);
     text-align: center;
     /* border-bottom: 5px solid #D43A60; */
-    color: white;
+    color: #1e272e;
 }
 
 .main-wrapper h1 {
     margin-bottom: 5px;
+    font-family: 'Montserrat';
 }
 
 .main-wrapper .running-text {
     display: inline-block;
     width: 50%;
+    font-style: italic;
     /* border: 5px solid black; */
 }
 
@@ -228,14 +236,16 @@ header {
 }
 
 .heading h2 {
-    font-weight: normal;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-family: 'Montserrat';
+    font-weight: 600;
 }
 
 .heading p {
+    font-size: 11px;
+    letter-spacing: 2.6px;
     margin-top: 0;
-    margin-bottom: 40px;
 }
 
 .lessons {
@@ -272,15 +282,17 @@ header {
 
 .lesson-icon img {
     border-radius: 0 0 15px 15px;
-    box-shadow: 0px 3px 5px #300244;
+    box-shadow: 0px 2px 5px #300244;
 }
 
 .lesson-icon p {
     position: relative;
     margin-top: 5px;
     width: 100%;
-    color: #D43A60;
-    font-size: 18px;
+    color: #f3f3f3;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 800;
 }
 
 .txt-contents {
@@ -339,6 +351,15 @@ header {
     text-align: center;
 }
 
+.message-wrapper h2 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.message-wrapper h3 {
+    font-size: 16px;
+}
+
 .bg-video-wrap {
     position: relative;
     overflow: hidden;
@@ -391,8 +412,19 @@ footer img {
     width: 170px;
 }
 
-footer p {
+footer .footer-description {
     font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+footer .footer-copyright {
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    font-size: 9px;
     margin-top: 0;
-    letter-spacing: 2.8px;
+}
+
+footer .footer-copyright .footer-copyright-bold {
+    font-weight: 800;
 }
