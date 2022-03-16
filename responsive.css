@@ -1,8 +1,37 @@
 /* Untuk Tablet */
 
 @media all and (max-width: 1000px) {
+    .header-left {
+        padding-top: 2px;
+    }
+    .header-left .header-title {
+        font-size: 20px;
+        padding-top: 6px;
+    }
+    .header-left .logo {
+        width: 30px;
+        margin: 5px 5px 10px 25px;
+    }
+    .header-right {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+    .navbar a {
+        padding: 10px;
+    }
+    .main-wrapper .running-text {
+        font-size: 13px;
+    }
+    .main-wrapper h1 {
+        font-size: 24px;
+    }
+    .main-wrapper .img-main {
+        width: 500px;
+    }
+    .headline-wrapper img {
+        width: 130px;
+    }
     .lesson {
-        width: 33.33%;
         margin-bottom: 50px;
     }
     .top-wrapper h1 {
@@ -27,6 +56,32 @@
         top: 320px;
         left: 4%;
     }
+    .top-wrapper h2 {
+        font-size: 24px;
+    }
+    .top-wrapper .top-paragraph {
+        width: 80%;
+        padding: 5px;
+    }
+    .top-wrapper p {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 10px;
+        margin: 0;
+    }
+    .lesson-wrapper {
+        padding-bottom: 30px;
+    }
+    .message-wrapper .heading {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .message-wrapper h2 {
+        font-size: 24px;
+    }
+    .message-wrapper h3 {
+        font-size: 14px;
+    }
 }
 
 
@@ -35,7 +90,7 @@
 @media all and (max-width: 670px) {
     .main-wrapper .running-text {
         width: 65%;
-        font-size: 13px;
+        font-size: 11px;
     }
     .main-wrapper h1 {
         font-size: 22px;
@@ -97,7 +152,7 @@
         font-size: 22px;
     }
     .top-wrapper .top-paragraph {
-        width: 500px;
+        width: 80%;
         padding: 5px;
     }
     .top-wrapper p {
@@ -106,12 +161,12 @@
         padding: 10px;
         margin: 0;
     }
+    .lesson-wrapper {
+        padding-bottom: 20px;
+    }
     .lesson-wrapper .heading {
         padding-top: 30px;
         font-size: 22px;
-    }
-    .lesson-wrapper {
-        padding-bottom: 50px;
     }
     .lesson {
         margin-top: 10px;
