@@ -1,2 +1,2 @@
-# projectG48
-project kelompok 
+# Project Kelas G
+Project Kelompok A48
