@@ -1,50 +1,143 @@
 /* Untuk Tablet */
+
 @media all and (max-width: 1000px) {
-  .lesson {
-    width: 33.33%;
-    margin-bottom: 50px;
-  }
-  
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-  
-  .heading h2 {
-    font-size: 20px;
-  }
+    .lesson {
+        width: 33.33%;
+        margin-bottom: 50px;
+    }
+    .top-wrapper h1 {
+        font-size: 32px;
+    }
+    .heading h2 {
+        font-size: 20px;
+    }
+    .haha1 {
+        top: 110px;
+        left: 80%;
+    }
+    .haha2 {
+        top: 180px;
+        left: 8%;
+    }
+    .haha3 {
+        top: 270px;
+        left: 75%;
+    }
+    .haha4 {
+        top: 320px;
+        left: 4%;
+    }
 }
 
+
 /* Untuk Smartphone */
+
 @media all and (max-width: 670px) {
-  .lesson {
-    width: 100%;
-  }
-  
-  footer {
-    text-align: center;
-  }
-  
-  .top-wrapper {
-    text-align: center;
-  }
-  
-  /* Tambahkan CSS untuk header-right */
-  .header-right {
-    display: none;
-  }
-  
-  /* Tambahkan CSS untuk menu-icon */
-  .menu-icon {
-    display: block;
-  }
-  
-  .top-wrapper h1 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-  
-  .top-wrapper p {
-    font-size: 14px;
-    line-height: 20px;
-  }
+    .main-wrapper .running-text {
+        width: 65%;
+        font-size: 13px;
+    }
+    .main-wrapper h1 {
+        font-size: 22px;
+        /* font-weight: 800; */
+        /* border: 2px solid #000; */
+        display: inline-block;
+    }
+    .main-wrapper .img-main {
+        width: 400px;
+    }
+    .headline-wrapper img {
+        width: 120px;
+    }
+    .haha1 {
+        top: 80px;
+        left: 76%;
+    }
+    .haha2 {
+        top: 120px;
+        left: 8%;
+    }
+    .haha3 {
+        top: 200px;
+        left: 73%;
+    }
+    .haha4 {
+        top: 250px;
+        left: 4%;
+    }
+    .lesson {
+        width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
+    .top-wrapper {
+        text-align: center;
+    }
+    /* Tambahkan CSS untuk header-right */
+    .header-right {
+        display: none;
+    }
+    /* Tambahkan CSS untuk menu-icon */
+    .menu-icon {
+        color: white;
+        float: right;
+        font-size: 25px;
+        padding-top: 10px;
+        padding-right: 20px;
+        display: block;
+    }
+    header {
+        height: 50px;
+    }
+    .header-left {
+        padding-top: 3px;
+    }
+    .top-wrapper h2 {
+        font-size: 22px;
+    }
+    .top-wrapper .top-paragraph {
+        width: 500px;
+        padding: 5px;
+    }
+    .top-wrapper p {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 10px;
+        margin: 0;
+    }
+    .lesson-wrapper .heading {
+        padding-top: 30px;
+        font-size: 22px;
+    }
+    .lesson-wrapper {
+        padding-bottom: 50px;
+    }
+    .lesson {
+        margin-top: 10px;
+    }
+    .message-wrapper .heading {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .message-wrapper h2 {
+        font-size: 22px;
+    }
+    .message-wrapper h3 {
+        font-size: 12px;
+    }
+    footer {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    footer img {
+        width: 120px;
+    }
+    footer .footer-description {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    footer .footer-copyright {
+        font-size: 7px;
+    }
 }
