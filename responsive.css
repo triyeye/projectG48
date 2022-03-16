@@ -205,6 +205,9 @@
     .main-wrapper {
         padding-bottom: 20px;
     }
+    .main-wrapper .running-text {
+        font-size: 10px;
+    }
     .main-wrapper .img-main {
         width: 200px;
     }
