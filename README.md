@@ -1,2 +1,2 @@
-# project Kelas G
+# Project Kelas G
 Project Kelompok A48
