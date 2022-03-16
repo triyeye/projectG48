@@ -21,7 +21,8 @@ a {
 }
 
 header {
-    background-color: #D43A60; /*ganti warna */
+    background-color: #D43A60;
+    /*ganti warna */
     position: sticky;
     top: 0;
     z-index: 10;
@@ -50,7 +51,6 @@ header {
     display: none;
 }
 
-
 .header-right {
     display: flex;
     justify-content: flex-end;
@@ -65,7 +65,8 @@ header {
 
 .navbar {
     background-size: 201% 100%;
-    background-image: linear-gradient(to left, rgba(230, 78, 116, 1.0) 50%, transparent 50%); /*ganti warna header left*/
+    background-image: linear-gradient(to left, rgba(230, 78, 116, 1.0) 50%, transparent 50%);
+    /*ganti warna header left*/
     transition: background-position 0.3s;
 }
 
@@ -134,8 +135,10 @@ header {
     background-image: linear-gradient(to right, #ffF, #fd79a8);
     text-align: center;
     /* border-bottom: 5px solid #D43A60; */
-    color: #313e6c; /* warna huruf diganti*/
-    border-bottom: 5px solid #D43A60; /*ditambahin border */
+    color: #313e6c;
+    /* warna huruf diganti*/
+    border-bottom: 5px solid #D43A60;
+    /*ditambahin border */
 }
 
 .main-wrapper h1 {
@@ -223,24 +226,25 @@ header {
     padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #1D213A; /* ganti warna bcakground*/
+    background-color: #1D213A;
+    /* ganti warna bcakground*/
     text-align: center;
 }
 
-.heading {
+.lesson-wrapper .heading {
     padding-top: 50px;
     color: white;
 }
 
-.heading h2 {
-    font-size: 30px;
-    margin-bottom: 8px;
+.lesson-wrapper .heading h2 {
+    font-size: 20px;
+    margin-bottom: 7px;
     font-family: 'Montserrat';
     font-weight: 600;
 }
 
-.heading p {
-    font-size: 11px;
+.lesson-wrapper .heading p {
+    font-size: 8px;
     letter-spacing: 2.6px;
     margin-top: 0;
 }
@@ -263,8 +267,10 @@ header {
     float: left;
     min-width: 300px;
     width: 30%;
-    background-image: linear-gradient(115deg, #D62D57, #F56CA3); /*ganti warna box*/
-    border: 1px solid #E64E74; /*ganti warna*/
+    background-image: linear-gradient(115deg, #D62D57, #F56CA3);
+    /*ganti warna box*/
+    border: 1px solid #E64E74;
+    /*ganti warna*/
     border-radius: 10px;
     margin-right: 10px;
     margin-left: 10px;
@@ -275,8 +281,9 @@ header {
 }
 
 .lesson:hover {
-    box-shadow: 0px 0px #D43A60; 
-    border: 2px solid #E64E74; /*ganti warna*/
+    box-shadow: 0px 0px #D43A60;
+    border: 2px solid #E64E74;
+    /*ganti warna*/
     transform: translate(0px, 0px);
 }
 
@@ -318,7 +325,8 @@ header {
     margin-bottom: 20px;
     padding: 10px 40px;
     background-color: #fffcdc;
-    border: 1px solid #D43A60; /* ganti warna*/
+    border: 1px solid #D43A60;
+    /* ganti warna*/
     border-radius: 3px;
     color: black;
     cursor: pointer;
@@ -353,11 +361,13 @@ header {
     /* border-top: 5px solid #D43A60; */
     padding-bottom: 0px;
     text-align: center;
+    color: white;
 }
 
 .message-wrapper h2 {
     font-family: 'Montserrat';
     font-weight: 600;
+    padding-top: 50px;
 }
 
 .message-wrapper h3 {
@@ -398,6 +408,7 @@ video {
     font-weight: bolder;
     animation-name: tada;
 }
+
 .message {
     padding: 15px 40px;
     /*background-image: linear-gradient(115deg, #D43A60, #F56CA3); */
@@ -409,17 +420,24 @@ video {
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
+
 @keyframes tada {
     0% {
         transform: scale(1);
     }
-    10%, 20% {
+    10%,
+    20% {
         transform: scale(0.9) rotate(-3deg);
     }
-    30%, 50%, 70%, 90% {
+    30%,
+    50%,
+    70%,
+    90% {
         transform: scale(1.1) rotate(3deg);
     }
-    40%, 60%, 80% {
+    40%,
+    60%,
+    80% {
         transform: scale(1.1) rotate(-3deg);
     }
     100% {

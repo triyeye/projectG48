@@ -97,6 +97,8 @@
         /* font-weight: 800; */
         /* border: 2px solid #000; */
         display: inline-block;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .main-wrapper .img-main {
         width: 400px;
@@ -164,8 +166,7 @@
     .lesson-wrapper {
         padding-bottom: 20px;
     }
-    .lesson-wrapper .heading {
-        padding-top: 30px;
+    .lesson-wrapper .heading h2 {
         font-size: 22px;
     }
     .lesson {
@@ -194,5 +195,56 @@
     }
     footer .footer-copyright {
         font-size: 7px;
+    }
+}
+
+@media all and (max-width: 415px) {
+    .headline-wrapper {
+        padding-top: 40px;
+    }
+    .main-wrapper {
+        padding-bottom: 20px;
+    }
+    .main-wrapper .img-main {
+        width: 200px;
+    }
+    .headline-wrapper img {
+        width: 80px;
+    }
+    .haha1 {
+        top: 40px;
+        left: 71%;
+    }
+    .haha2 {
+        top: 70px;
+        left: 10%;
+    }
+    .haha3 {
+        top: 100px;
+        left: 69%;
+    }
+    .haha4 {
+        top: 130px;
+        left: 8%;
+    }
+    .lesson-wrapper .heading h2 {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    .lesson-wrapper .heading p {
+        font-size: 7px;
+        letter-spacing: 2.6px;
+        margin-top: 0;
+    }
+    .message-wrapper .heading {
+        padding-top: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .message-wrapper h2 {
+        font-size: 16px;
+    }
+    .message-wrapper h3 {
+        font-size: 9px;
     }
 }
